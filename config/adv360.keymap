@@ -40,19 +40,7 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        vim_end_line {
-            bindings = <&kp END>;
-            key-positions = <66 38 29>;
-        };
-
-        vim_home_line {
-            bindings = <&kp HOME>;
-            key-positions = <66 38 24>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
