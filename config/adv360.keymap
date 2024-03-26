@@ -44,7 +44,7 @@
             bindings = <
 &kp EQUAL  &kp EXCLAMATION  &kp AT_SIGN  &kp N3    &kp N4     &kp N5  &trans                                                        &mo 3          &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp MINUS
 &kp TAB    &kp Q            &none        &kp E     &kp R      &kp T   &none                                                         &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
-&kp ESC    &kp A            &kp S        &kp D     &kp F      &kp G   &none      &kp LCTRL  &kp LALT      &kp LGUI  &kp LEFT_SHIFT  &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp DOUBLE_QUOTES
+&kp ESC    &kp A            &kp S        &kp D     &kp F      &kp G   &none      &kp LCTRL  &kp LALT      &kp LGUI  &kp LEFT_SHIFT  &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp KP_EQUAL
 &kp LSHFT  &kp Z            &kp X        &kp C     &kp V      &none                         &none         &none                                    &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp RSHFT
 &mo 2      &kp GRAVE        &kp CAPS     &kp LEFT  &kp RIGHT          &kp SPACE  &none      &none         &none     &kp ENTER       &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &kp BACKSLASH
             >;
