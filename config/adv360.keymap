@@ -10,11 +10,11 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
+        vim_back_word: vim_back_word {
             compatible = "zmk,behavior-macro";
-            label = "macro_version";
             #binding-cells = <0>;
-            bindings = <&kp RET>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT>;
+            label = "VIM_BACK_WORD";
         };
 
         #endif
@@ -48,11 +48,11 @@
 
         keypad {
             bindings = <
-&kp EQUAL  &kp EXCLAMATION  &kp AT_SIGN  &kp N3    &kp N4     &kp N5  &trans                                                        &mo 3          &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp MINUS
-&kp TAB    &kp Q            &kp W        &kp E     &kp R      &kp T   &none                                                         &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
-&kp ESC    &kp A            &kp S        &kp D     &kp F      &kp G   &none      &kp LCTRL  &kp LALT      &kp LGUI  &kp LEFT_SHIFT  &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp DOUBLE_QUOTES
-&kp LSHFT  &kp Z            &kp X        &kp C     &kp V      &kp B                         &none         &none                                    &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp RSHFT
-&mo 2      &kp GRAVE        &kp CAPS     &kp LEFT  &kp RIGHT          &kp SPACE  &none      &none         &none     &kp ENTER       &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &kp BACKSLASH
+&kp EQUAL  &kp EXCLAMATION  &kp AT_SIGN  &kp N3    &kp N4     &kp N5          &trans                                                        &mo 3          &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &kp MINUS
+&kp TAB    &kp Q            &kp W        &kp E     &kp R      &kp T           &none                                                         &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
+&kp ESC    &kp A            &kp S        &kp D     &kp F      &kp G           &none      &kp LCTRL  &kp LALT      &kp LGUI  &kp LEFT_SHIFT  &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp DOUBLE_QUOTES
+&kp LSHFT  &kp Z            &kp X        &kp C     &kp V      &vim_back_word                        &none         &none                                    &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp RSHFT
+&mo 2      &kp GRAVE        &kp CAPS     &kp LEFT  &kp RIGHT                  &kp SPACE  &none      &none         &none     &kp ENTER       &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &kp BACKSLASH
             >;
         };
 
