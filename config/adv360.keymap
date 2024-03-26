@@ -31,11 +31,13 @@
         vim_home {
             bindings = <&kp HOME>;
             key-positions = <66 38 24>;
+            layers = <1>;
         };
 
         vim_end {
             bindings = <&kp END>;
             key-positions = <66 38 30>;
+            layers = <1>;
         };
     };
 
