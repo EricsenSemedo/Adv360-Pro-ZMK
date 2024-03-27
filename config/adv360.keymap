@@ -60,7 +60,7 @@
 &kp TAB    &kp Q            &kp LC(RIGHT)  &kp E   &kp R   &kp T         &none                                                                &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
 &kp ESC    &kp A            &kp S          &kp D   &kp F   &kp G         &none      &kp LCTRL  &kp LALT      &kp LGUI         &kp LEFT_SHIFT  &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp EQUAL
 &kp LSHFT  &kp Z            &kp X          &kp C   &kp V   &kp LC(LEFT)                        &none         &kp EXCLAMATION                                 &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp RSHFT
-&none      &none            &kp CAPS       &none   &none                 &kp SPACE  &none      &none         &kp AT_SIGN      &kp ENTER       &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &kp BACKSLASH
+&none      &none            &none          &none   &none                 &kp SPACE  &none      &none         &kp AT_SIGN      &kp ENTER       &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &kp BACKSLASH
             >;
         };
 
