@@ -39,16 +39,6 @@
             key-positions = <66 30 69>;
             layers = <1>;
         };
-
-        move_window_left {
-            bindings = <&kp LG(LS(LEFT))>;
-            key-positions = <37 40>;
-        };
-
-        move_window_right {
-            bindings = <&kp LG(LS(RIGHT))>;
-            key-positions = <37 43>;
-        };
     };
 
     keymap {
