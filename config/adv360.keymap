@@ -56,11 +56,11 @@
 
         keypad {
             bindings = <
-&caps_word            &kp EXCLAMATION      &kp AT_SIGN    &kp N3  &kp N4  &kp N5         &trans                                                               &mo 3          &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &none
-&kp TAB               &kp Q                &kp LC(RIGHT)  &kp E   &kp R   &kp LC(GRAVE)  &none                                                                &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
-&kp ESC               &none                &none          &kp D   &kp F   &kp G          &none      &kp LCTRL  &kp LALT      &kp LGUI         &kp LS(ENTER)   &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp EQUAL
-&kp LSHFT             &kp Z                &kp X          &kp C   &kp V   &kp LC(LEFT)                         &none         &kp EXCLAMATION                                 &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp BACKSLASH
-&kp C_BRIGHTNESS_DEC  &kp C_MENU_INCREASE  &none          &none   &none                  &kp SPACE  &none      &none         &kp AT_SIGN      &kp LEFT_SHIFT  &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &none
+&caps_word            &kp EXCLAMATION       &kp AT_SIGN    &kp N3  &kp N4  &kp N5         &trans                                                               &mo 3          &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &none
+&kp TAB               &kp Q                 &kp LC(RIGHT)  &kp E   &kp R   &kp LC(GRAVE)  &none                                                                &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LBKT              &kp RIGHT_BRACKET      &kp KP_MINUS  &kp KP_PLUS
+&kp ESC               &none                 &none          &kp D   &kp F   &kp G          &none      &kp LCTRL  &kp LALT      &kp LGUI         &kp LS(ENTER)   &none          &kp LEFT        &kp DOWN          &kp UP_ARROW          &kp RIGHT              &kp UNDER     &kp EQUAL
+&kp LSHFT             &kp Z                 &kp X          &kp C   &kp V   &kp LC(LEFT)                         &none         &kp EXCLAMATION                                 &kp STAR        &kp HASH          &kp CARET             &kp DOLLAR             &kp TILDE     &kp BACKSLASH
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none          &none   &none                  &kp SPACE  &none      &none         &kp AT_SIGN      &kp LEFT_SHIFT  &kp BACKSPACE                  &kp AMPERSAND     &kp PIPE              &kp PERCENT            &none         &none
             >;
         };
 
