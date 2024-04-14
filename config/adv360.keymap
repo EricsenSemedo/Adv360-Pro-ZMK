@@ -25,21 +25,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        vim_home {
-            bindings = <&kp HOME>;
-            key-positions = <66 24 69>;
-            layers = <1>;
-        };
-
-        vim_end {
-            bindings = <&kp END>;
-            key-positions = <66 30 69>;
-            layers = <1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
