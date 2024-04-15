@@ -27,6 +27,22 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        move_window_right: move_window_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT) &kp ESCAPE>;
+            label = "MOVE_WINDOW_RIGHT";
+        };
+
+        move_window_left: move_window_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT) &kp ESCAPE>;
+            label = "MOVE_WINDOW_LEFT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,11 +88,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                          &trans  &trans            &trans              &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC                                                                            &trans  &trans            &trans              &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans  &trans      &kp LEFT_WIN  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &trans  &kp LG(LEFT)      &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                                                        &kp LG(LS(LEFT))  &trans              &trans            &kp LG(LS(RIGHT))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans                &trans  &trans      &trans        &trans                                  &trans                    &trans              &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans  &trans             &trans              &trans            &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC                                            &trans  &trans             &trans              &trans            &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans  &trans      &kp LEFT_WIN  &none   &trans  &move_window_left  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &move_window_right  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                        &kp LG(LS(LEFT))   &trans              &trans            &kp LG(LS(RIGHT))   &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans                &trans  &trans      &trans        &trans  &trans                     &trans              &trans            &trans              &trans  &trans
             >;
         };
     };
