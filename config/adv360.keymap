@@ -41,6 +41,20 @@
             bindings = <&kp LG(LEFT) &kp ESCAPE>;
             label = "MOVE_WINDOW_LEFT";
         };
+
+        move_window_down: move_window_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(DOWN) &kp ESCAPE>;
+            label = "MOVE_WINDOW_DOWN";
+        };
+
+        move_window_up: move_window_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(UP_ARROW) &kp ESCAPE>;
+            label = "MOVE_WINDOW_UP";
+        };
     };
 
     keymap {
@@ -88,11 +102,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans  &trans             &trans              &trans            &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC                                            &trans  &trans             &trans              &trans            &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans  &trans      &kp LEFT_WIN  &none   &trans  &move_window_left  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &move_window_right  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                        &kp LG(LS(LEFT))   &trans              &trans            &kp LG(LS(RIGHT))   &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans                &trans  &trans      &trans        &trans  &trans                     &trans              &trans            &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                          &trans  &trans             &trans             &trans           &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC                                            &trans  &trans             &trans             &trans           &trans              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &trans  &trans      &kp LEFT_WIN  &none   &trans  &move_window_left  &move_window_down  &move_window_up  &move_window_right  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans      &trans                        &kp LG(LS(LEFT))   &trans             &trans           &kp LG(LS(RIGHT))   &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans                &trans  &trans      &trans        &trans  &trans                     &trans             &trans           &trans              &trans  &trans
             >;
         };
     };
